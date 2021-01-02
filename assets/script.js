@@ -10,6 +10,7 @@ document.getElementById("generate1").addEventListener("click", generateRow)
 // fix this with CSS grid? clearfix?
 // rearrange array instead of randomizing so as not to repeat pitch classes
 function generateRow() {
+    document.querySelector("#tone-row").innerText = ""
 
     for (var i = 0; i < 12; i++) {
         var row = document.createElement("p")
@@ -26,10 +27,10 @@ function generateRow() {
 document.getElementById("generate2").addEventListener("click", generateProg)
 
 function generateProg() {
+    document.querySelector("#chord-prog").innerText = ""
 
     for (var i = 0; i < 4; i++) {
         var prog = document.createElement("p")
-
         prog.innerText = 
         pitchClass[Math.floor(Math.random() * pitchClass.length)] +
         chordType[Math.floor(Math.random() * chordType.length)] 

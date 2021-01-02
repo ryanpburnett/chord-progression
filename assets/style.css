@@ -7,8 +7,10 @@ body:hover {
     background-color: rgb(100, 90, 200);
 }
 
-h1 {
-    font-family: Courier, monospace
+h1, h2 {
+    font-family: Courier, monospace;
+    font-size: 35px; 
+    text-align: center;
 }
 
 .boxen {
@@ -22,13 +24,13 @@ h1 {
 
 .generatedText {
     font-size: 48px;
-    color: gray;
+    color: black;
     height: 140px;
     align-items: center;
 }
 
 p {
-    float: left;
+    display: inline-flex;
     padding-right: 30px;
 }
 
