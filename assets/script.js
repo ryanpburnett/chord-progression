@@ -5,6 +5,7 @@ var chordType = ["M", "m", "dim", "aug", "7", "M7", "m7", "mM7", "dim7", "1/2dim
     // popup window, switch(es), dropdown menu
 // MIDI samples for playback
 // Allow user to alter chords randomly generated
+// store previously generated chords or tone rows in history tab
 
 document.getElementById("generate1").addEventListener("click", generateRow)
 // fix this with CSS grid? clearfix?
