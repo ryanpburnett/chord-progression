@@ -1,5 +1,19 @@
 var pitchClass = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
-var chordType = ["M", "m", "dim", "aug", "7", "M7", "m7", "mM7", "dim7", "1/2dim7", "aug7"]
+var chordType = [
+"M", "M", "M", "M", "M", "M", "M", "M", 
+"m", "m", "m", "m", "m", "m", "m", "m", 
+"dim", "dim", "dim", "dim",
+"aug", "aug", 
+"7", "7", "7", "7", 
+"M7", "M7", 
+"m7", "m7", 
+"mM7", 
+"dim7", "dim7", 
+"1/2dim7", 
+"aug7"
+]
+
+// way of producing weighted probability in lieu of duplicate array items
 // new function that introduces non-randomness?
 // options to alter what chord types to use,
     // popup window, switch(es), dropdown menu
