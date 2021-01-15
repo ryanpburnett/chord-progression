@@ -54,3 +54,12 @@ p {
 .button:focus {
     outline: 0px;
 }
+
+#sig {
+    margin: 5px;
+    font-family: 'Courier, monospace';
+    font-size: 25px;
+    font-weight: bold;
+    color: navy;
+    text-align: right;
+}
