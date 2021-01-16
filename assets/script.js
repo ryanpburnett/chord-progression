@@ -1,6 +1,6 @@
 var pitchClass = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 var chordType = [
-"M", "M", "M", "M", "M", "M", "M", "M", 
+"", "", "", "", "", "", "", "", 
 "m", "m", "m", "m", "m", "m", "m", "m", 
 "dim", "dim", "dim", "dim",
 "aug", "aug", 
@@ -12,7 +12,7 @@ var chordType = [
 "1/2dim7", 
 "aug7"
 ]
-
+var rhythmMatrix = ["-", "X"]
 // way of producing weighted probability in lieu of duplicate array items
 // new function that introduces non-randomness?
 // options to alter what chord types to use,
@@ -54,5 +54,23 @@ function generateProg() {
     }
     
     document.getElementById("chord-prog").style.display = "block";
+
+}
+
+document.getElementById("generate3").addEventListener("click", generateMatrix)
+// fix this with CSS grid? clearfix?
+// rearrange array instead of randomizing so as not to repeat pitch classes
+function generateMatrix() {
+    document.querySelector("#rhythm-matrix").innerText = ""
+
+    for (var i = 0; i < 8; i++) {
+        var matrix = document.createElement("p")
+
+        matrix.innerText = rhythmMatrix[Math.floor(Math.random() * rhythmMatrix.length)]
+        
+        document.getElementById("rhythm-matrix").appendChild(matrix)
+    }
+    
+    document.getElementById("rhythm-matrix").style.display = "block";
 
 }

@@ -1,6 +1,6 @@
 body {
     background-color: rgb(130, 200, 130);
-    transition: background-color 600s;
+    transition: background-color 300s;
 }
 
 body:hover {
