@@ -30,6 +30,7 @@ h1, h2 {
 
 p {
     display: inline-flex;
+    width: 20px;
     padding-right: 30px;
     margin-top: 15px;
     margin-bottom: 15px;
