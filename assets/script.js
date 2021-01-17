@@ -24,7 +24,7 @@ var rhythmMatrix = ["-", "X"]
 document.getElementById("generate1").addEventListener("click", generateRow)
 // fix this with CSS grid? clearfix?
 // rearrange array instead of randomizing so as not to repeat pitch classes
-// format generated material equally spaces
+// format generated material equally spaced
 function generateRow() {
     document.querySelector("#tone-row").innerText = ""
 
