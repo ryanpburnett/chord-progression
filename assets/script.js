@@ -13,6 +13,7 @@ var chordType = [
 "aug7"
 ]
 var rhythmMatrix = ["-", "X"]
+// establish consts for functions to clean up code
 // way of producing weighted probability in lieu of duplicate array items
 // new function that introduces non-randomness?
 // options to alter what chord types to use,
