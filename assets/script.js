@@ -1,5 +1,5 @@
-var pitchClass = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
-var chordType = [
+const pitchClass = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
+const chordType = [
 "", "", "", "", "", "", "", "", 
 "m", "m", "m", "m", "m", "m", "m", "m", 
 "dim", "dim", "dim", "dim",
@@ -12,7 +12,7 @@ var chordType = [
 "1/2dim7", 
 "aug7"
 ]
-var rhythmMatrix = ["-", "X"]
+const rhythmMatrix = ["-", "X"]
 // establish consts for functions to clean up code
 // way of producing weighted probability in lieu of duplicate array items
 // new function that introduces non-randomness?
@@ -29,8 +29,8 @@ document.getElementById("generate1").addEventListener("click", generateRow)
 function generateRow() {
     document.querySelector("#tone-row").innerText = ""
 
-    for (var i = 0; i < 12; i++) {
-        var row = document.createElement("p")
+    for (i = 0; i < 12; i++) {
+        const row = document.createElement("p")
 
         row.innerText = pitchClass[Math.floor(Math.random() * pitchClass.length)]
         
@@ -46,8 +46,8 @@ document.getElementById("generate2").addEventListener("click", generateProg)
 function generateProg() {
     document.querySelector("#chord-prog").innerText = ""
 
-    for (var i = 0; i < 4; i++) {
-        var prog = document.createElement("p")
+    for (i = 0; i < 4; i++) {
+        const prog = document.createElement("p")
         prog.innerText = 
         pitchClass[Math.floor(Math.random() * pitchClass.length)] +
         chordType[Math.floor(Math.random() * chordType.length)] 
@@ -65,8 +65,8 @@ document.getElementById("generate3").addEventListener("click", generateMatrix)
 function generateMatrix() {
     document.querySelector("#rhythm-matrix").innerText = ""
 
-    for (var i = 0; i < 8; i++) {
-        var matrix = document.createElement("p")
+    for (i = 0; i < 8; i++) {
+        const matrix = document.createElement("p")
 
         matrix.innerText = rhythmMatrix[Math.floor(Math.random() * rhythmMatrix.length)]
         
