@@ -13,7 +13,11 @@ const chordType = [
 "aug7"
 ]
 const rhythmMatrix = ["-", "X"]
-// establish consts for functions to clean up code
+
+const gen1 = document.getElementById("gen1")
+const gen2 = document.getElementById("gen2")
+const gen3 = document.getElementById("gen3")
+
 // way of producing weighted probability in lieu of duplicate array items
 // new function that introduces non-randomness?
 // options to alter what chord types to use,
@@ -22,7 +26,7 @@ const rhythmMatrix = ["-", "X"]
 // Allow user to alter chords randomly generated
 // store previously generated chords or tone rows in history tab
 
-document.getElementById("generate1").addEventListener("click", generateRow)
+gen1.addEventListener("click", generateRow)
 // fix this with CSS grid? clearfix?
 // rearrange array instead of randomizing so as not to repeat pitch classes
 // format generated material equally spaced
@@ -41,7 +45,7 @@ function generateRow() {
 
 }
         
-document.getElementById("generate2").addEventListener("click", generateProg)
+gen2.addEventListener("click", generateProg)
 
 function generateProg() {
     document.querySelector("#chord-prog").innerText = ""
@@ -59,7 +63,7 @@ function generateProg() {
 
 }
 
-document.getElementById("generate3").addEventListener("click", generateMatrix)
+gen3.addEventListener("click", generateMatrix)
 // fix this with CSS grid? clearfix?
 // rearrange array instead of randomizing so as not to repeat pitch classes
 function generateMatrix() {
