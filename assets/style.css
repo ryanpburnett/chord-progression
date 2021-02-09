@@ -1,10 +1,17 @@
 body {
-    background-color: rgb(130, 200, 130);
-    transition: background-color 300s;
+    animation-name: bgAnimate;
+    animation-duration: 600s;
+    animation-iteration-count: infinite;
 }
 
-body:hover {
-    background-color: rgb(100, 90, 200);
+@keyframes bgAnimate {
+    0% {background-color: rgb(130, 200, 130);}
+    17% {background-color: rgb(100, 90, 200);}
+    33% {background-color: rgb(200, 10, 200);}
+    50% {background-color: rgb(200, 10, 10);}
+    67% {background-color: rgb(200, 10, 200);}
+    84% {background-color: rgb(100, 90, 200);}
+    100% {background-color: rgb(130, 200, 130);}
 }
 
 h1, h2 {
