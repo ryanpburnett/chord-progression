@@ -18,6 +18,8 @@ const gen1 = document.getElementById("gen1")
 const gen2 = document.getElementById("gen2")
 const gen3 = document.getElementById("gen3")
 
+const numOfChords = document.getElementById("numOfChords")
+
 // way of producing weighted probability in lieu of duplicate array items
 // new function that introduces non-randomness?
 // options to alter what chord types to use,
@@ -50,7 +52,7 @@ gen2.addEventListener("click", generateProg)
 function generateProg() {
     document.querySelector("#chord-prog").innerText = ""
 
-    for (i = 0; i < 4; i++) {
+    for (i = 0; i < numOfChords.value; i++) {
         const prog = document.createElement("p")
         prog.innerText = 
         pitchClass[Math.floor(Math.random() * pitchClass.length)] +
