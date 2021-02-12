@@ -28,6 +28,11 @@ h1, h2 {
     padding: 10px;
 }
 
+.input-question {
+    font-family: Courier, monospace;
+    font-size: 25px; 
+}
+
 .generatedText {
     font-size: 48px;
     color: black;
