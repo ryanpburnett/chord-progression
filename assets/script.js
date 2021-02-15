@@ -19,6 +19,7 @@ const gen2 = document.getElementById("gen2")
 const gen3 = document.getElementById("gen3")
 
 const numOfChords = document.getElementById("numOfChords")
+const numOfBeats = document.getElementById("numOfBeats")
 
 // way of producing weighted probability in lieu of duplicate array items
 // new function that introduces non-randomness?
@@ -71,7 +72,7 @@ gen3.addEventListener("click", generateMatrix)
 function generateMatrix() {
     document.querySelector("#rhythm-matrix").innerText = ""
 
-    for (i = 0; i < 8; i++) {
+    for (i = 0; i < numOfBeats.value; i++) {
         const matrix = document.createElement("p")
 
         matrix.innerText = rhythmMatrix[Math.floor(Math.random() * rhythmMatrix.length)]
