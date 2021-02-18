@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord Progression Generator</title>
+    <link rel="icon" href="./assets/R-favicon.png">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <h1>A generator of various randomized musical elements</h1>
+
+    <div class="boxen">
+        <h2>12 tone row generator</h2>
+    </div>
+    <div class="boxen generatedText" id="tone-row">
+        <!-- ptags generated here -->
+    </div>  
+    <div class="boxen">
+        <button class="button" id="gen1">Generate</button>
+    </div>
+    <br>
+    
+    <div class="boxen">
+        <h2>chord progresssion generator</h2>
+    </div>
+    <div class="boxen">
+        <p class="input-question">How many chords do you want?&nbsp;&nbsp;<input id="numOfChords" type="number" value="4" max="16" min="1"></p>
+    </div>
+    <div class="boxen generatedText" id="chord-prog">
+        <!-- ptags generated here -->
+    </div>  
+    <div class="boxen">
+        <button class="button" id="gen2">Generate</button>
+    </div>
+    <br>
+
+    <div class="boxen">
+        <h2>rhythm matrix generator</h2>
+    </div>
+    <div class="boxen generatedText" 
+    <div class="boxen">
+        <p class="input-question">How many beats would you like?&nbsp;&nbsp;<input id="numOfBeats" type="number" value="8" max="16" min="1"></p>
+    </div>
+    <div class="boxen generatedText" id="rhythm-matrix">
+        <!-- ptags generated here -->
+    </div>  
+    <div class="boxen">
+        <button class="button" id="gen3">Generate</button>
+    </div>
+    <br>
+
+    <div id="sig">-RPB</div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
