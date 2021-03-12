@@ -22,7 +22,7 @@ gen2.addEventListener("click", generateProg)
 function generateProg() {
     document.querySelector("#chord-prog").innerText = ""
 
-    for (i = 0; i < numOfChords.value; i++) {
+    for (let i = 0; i < numOfChords.value; i++) {
         const prog = document.createElement("p")
         prog.innerText = 
         pitchClass[Math.floor(Math.random() * pitchClass.length)] +
@@ -30,7 +30,5 @@ function generateProg() {
         
         document.getElementById("chord-prog").appendChild(prog)
     }
-    
-    document.getElementById("chord-prog").style.display = "block";
 
 }

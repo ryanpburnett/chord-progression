@@ -7,14 +7,12 @@ gen1.addEventListener("click", generateRow)
 function generateRow() {
     document.querySelector("#tone-row").innerText = ""
 
-    for (i = 0; i < 12; i++) {
-        const row = document.createElement("p")
+    for (let i = 0; i < 12; i++) {
+        const rowElement = document.createElement("p")
 
-        row.innerText = pitchClass[Math.floor(Math.random() * pitchClass.length)]
+        rowElement.innerText = pitchClass[Math.floor(Math.random() * pitchClass.length)]
         
-        document.getElementById("tone-row").appendChild(row)
+        document.getElementById("tone-row").appendChild(rowElement)
     }
-    
-    document.getElementById("tone-row").style.display = "block";
 
 }

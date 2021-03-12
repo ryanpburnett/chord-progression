@@ -10,14 +10,12 @@ gen3.addEventListener("click", generateMatrix)
 function generateMatrix() {
     document.querySelector("#rhythm-matrix").innerText = ""
 
-    for (i = 0; i < numOfBeats.value; i++) {
+    for (let i = 0; i < numOfBeats.value; i++) {
         const matrix = document.createElement("p")
 
         matrix.innerText = rhythmMatrix[Math.floor(Math.random() * rhythmMatrix.length)]
         
         document.getElementById("rhythm-matrix").appendChild(matrix)
     }
-    
-    document.getElementById("rhythm-matrix").style.display = "block";
 
 }
