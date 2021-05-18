@@ -26,6 +26,7 @@ h1, h2 {
 }
 
 .boxen {
+    display: flex;
     text-align: center;
     justify-content: center;
     margin: 5px;
@@ -53,6 +54,7 @@ p {
 }
 
 .button {
+    margin: 20px;
     border-radius: 10px;
     background-color: rgb(150, 200, 215);
     height: 40px;
