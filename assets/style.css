@@ -26,11 +26,14 @@ h1, h2 {
 }
 
 .boxen {
+    border: 5px solid navy;
+}
+
+.boxen, .buttonbox {
     display: flex;
     text-align: center;
     justify-content: center;
     margin: 5px;
-    border: 5px solid navy;
     padding: 10px;
 }
 
