@@ -20,6 +20,10 @@ h1, h2 {
     text-align: center;
 }
 
+.vertical-center {
+
+}
+
 .index {
     font-family: Courier, monospace;
     font-size: 50px;
@@ -33,7 +37,7 @@ h1, h2 {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin: 5px;
+    margin: 30px;
     padding: 10px;
 }
 
@@ -42,7 +46,7 @@ h1, h2 {
     font-size: 25px; 
 }
 
-.generatedText {
+.generated-text {
     font-size: 48px;
     color: black;
     min-height: 90px;
