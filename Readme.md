@@ -15,6 +15,9 @@
 [GitHub Link](#github-link)
 
 
+## Link
+https://ryanpburnett.github.io/chord-progression/
+
 ## Description
 This project generates random chord progressions, tone rows, and rhythm matrices
 
