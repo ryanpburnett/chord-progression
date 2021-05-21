@@ -102,30 +102,30 @@ p {
 
 @media screen and (max-width: 600px) {
     p {
-        font-size: 24px;
+        font-size: 25px;
     }
 }
 
 @media screen and (min-width: 600px) {
     p {
-        font-size: 24px;
+        font-size: 30px;
     }
 }
 
 @media screen and (min-width: 768px) {
     p {
-        font-size: 36px;
+        font-size: 35px;
     }
 }
 
 @media screen and (min-width: 992px) {
     p {
-        font-size: 48px;
+        font-size: 40px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     p {
-        font-size: 48px;
+        font-size: 45px;
     }
 }
