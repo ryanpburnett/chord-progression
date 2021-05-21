@@ -39,6 +39,7 @@ h1, h2 {
     justify-content: center;
     margin: 30px;
     padding: 10px;
+    overflow: auto;
 }
 
 .input-question {
@@ -47,13 +48,13 @@ h1, h2 {
 }
 
 .generated-text {
-    font-size: 48px;
     color: black;
-    min-height: 90px;
+    height: 110px;
     align-items: center;
 }
 
 p {
+    font-size: 48px;
     display: inline-flex;
     padding-right: 30px;
     margin-top: 15px;
@@ -97,4 +98,34 @@ p {
     font-weight: bold;
     color: navy;
     text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    p {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    p {
+        font-size: 48px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    p {
+        font-size: 48px;
+    }
 }
