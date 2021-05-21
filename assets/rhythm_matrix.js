@@ -11,6 +11,12 @@ function generateMatrix() {
     document.querySelector("#rhythm-matrix").innerText = ""
 
     for (let i = 0; i < numOfBeats.value; i++) {
+
+        if (i === 4 || i === 8 || i === 12) {
+            const lineBreak = document.createElement("br")
+            document.getElementById("rhythm-matrix").appendChild(lineBreak)
+        }
+
         const matrix = document.createElement("p")
 
         matrix.innerText = rhythmMatrix[Math.floor(Math.random() * rhythmMatrix.length)]

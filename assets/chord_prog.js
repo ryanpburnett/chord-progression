@@ -23,6 +23,12 @@ function generateProg() {
     document.querySelector("#chord-prog").innerText = ""
 
     for (let i = 0; i < numOfChords.value; i++) {
+        
+        if (i === 4 || i === 8 || i === 12) {
+            const lineBreak = document.createElement("br")
+            document.getElementById("chord-prog").appendChild(lineBreak)
+        }
+
         const prog = document.createElement("p")
         prog.innerText = 
         pitchClass[Math.floor(Math.random() * pitchClass.length)] +
