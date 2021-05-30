@@ -36,16 +36,28 @@
             <input id="aug" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
             <output>4</output>
         </p>
-
+        <br>
+        <button class="button" onclick="seventhsShow()">Ya like 7ths?</button>
+        <div id="sevenths" class="hide">
+            <p class="probabilityText">7th
+                <input id="domSeven" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                <output>0</output>
+            </p>
+            <p class="probabilityText">maj7
+                <input id="majSeven" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                <output>0</output>
+            </p>
+            <p class="probabilityText">min7
+                <input id="minSeven" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                <output>0</output>
+            </p>
+            <br>
+            <button class="button" onclick="moreShow()">Even more?</button>
+            <div id="more" class="hide">
+                <p>Coming soon...</p>
+            </div>
+        </div>
     </div>
-    <!-- POSSIBLE CHECKBOXEN FOR SELECTING CHORD QUALITY -->
-    <!-- <div class="boxen">
-        <p class="input-question">What chord qualities do you want?&nbsp;&nbsp;
-            Major <input id ="maj" type="checkbox">
-            &nbsp;&nbsp;
-            Minor <input id ="min" type="checkbox">
-        </p>
-    </div> -->
     <div class="boxen generated-text" id="chord-prog">
         <!-- ptags generated here -->
     </div>  

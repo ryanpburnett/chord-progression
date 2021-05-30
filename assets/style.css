@@ -61,6 +61,14 @@ h1, h2 {
     align-items: center;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 p {
     font-size: 48px;
     display: inline-block;
