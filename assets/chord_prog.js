@@ -3,29 +3,29 @@ const chordType = []
 
 const gen2 = document.getElementById("gen2")
 const numOfChords = document.getElementById("numOfChords")
-const numMajor = document.getElementById("numMajor")
-const numMinor = document.getElementById("numMinor")
-const numDim = document.getElementById("numDim")
-const numAug = document.getElementById("numAug")
+const major = document.getElementById("major")
+const minor = document.getElementById("minor")
+const dim = document.getElementById("dim")
+const aug = document.getElementById("aug")
 
 gen2.addEventListener("click", generateProg)
 
 function generateProg() {
     document.querySelector("#chord-prog").innerText = ""
 
-    for (let i = 0; i < numMajor.value; i++) {
+    for (let i = 0; i < major.value; i++) {
         chordType.push("")
     }
 
-    for (let i = 0; i < numMinor.value; i++) {
+    for (let i = 0; i < minor.value; i++) {
         chordType.push("m")
     }
 
-    for (let i = 0; i < numDim.value; i++) {
+    for (let i = 0; i < dim.value; i++) {
         chordType.push("dim")
     }
 
-    for (let i = 0; i < numAug.value; i++) {
+    for (let i = 0; i < aug.value; i++) {
         chordType.push("aug")
     }
 

@@ -11,21 +11,31 @@
     
     <h1 class="headspace">chord progresssion generator</h1>
     <div class="boxen">
-        <p class="input-question">How many chords do you want?&nbsp;&nbsp;<input id="numOfChords" type="number" value="4" max="16" min="1"></p>
+        <p class="input-question">How many chords do you want?&nbsp;&nbsp;<input id="numOfChords" type="range" value="4" max="16" min="1" oninput="this.nextElementSibling.value = this.value">
+            <output>4</output>
+        </p>
         <br>
         <p class="input-question"><a href="about.html">Probability of:</a></p>
         <br>
-        <p id="majorProb" class="probabilityText">Major</p>
-        <input id="numMajor" type="number" value="4" max="8" min="0"></p>
+        <p class="probabilityText">Major
+            <input id="major" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+            <output>4</output>
+        </p>
 
-        <p id="minorProb" class="probabilityText">Minor</p>
-        <input id="numMinor" type="number" value="4" max="8" min="0"></p>
+        <p class="probabilityText">Minor
+            <input id="minor" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+            <output>4</output>
+        </p>
 
-        <p id="dimProb" class="probabilityText">Diminished</p>
-        <input id="numDim" type="number" value="4" max="8" min="0"></p>
+        <p class="probabilityText">Diminished
+            <input id="dim" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+            <output>4</output>
+        </p>
 
-        <p id="augProb" class="probabilityText">Augmented</p>
-        <input id="numAug" type="number" value="4" max="8" min="0"></p>
+        <p class="probabilityText">Augmented
+            <input id="aug" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+            <output>4</output>
+        </p>
 
     </div>
     <!-- POSSIBLE CHECKBOXEN FOR SELECTING CHORD QUALITY -->
