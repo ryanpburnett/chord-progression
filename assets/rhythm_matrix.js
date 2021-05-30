@@ -9,7 +9,7 @@ gen3.addEventListener("click", generateMatrix)
 // fix this with CSS grid? clearfix?
 // rearrange array instead of randomizing so as not to repeat pitch classes
 function generateMatrix() {
-    document.querySelector("#rhythm-matrix").innerText = ""
+    document.querySelector("#rhythmMatrix").innerText = ""
     const rhythmMatrix = []
 
     for (let i = 0; i < notes.value; i++) {
@@ -24,14 +24,14 @@ function generateMatrix() {
 
         if (i === 4 || i === 8 || i === 12) {
             const lineBreak = document.createElement("br")
-            document.getElementById("rhythm-matrix").appendChild(lineBreak)
+            document.getElementById("rhythmMatrix").appendChild(lineBreak)
         }
 
         const matrix = document.createElement("p")
 
         matrix.innerText = rhythmMatrix[Math.floor(Math.random() * rhythmMatrix.length)]
         
-        document.getElementById("rhythm-matrix").appendChild(matrix)
+        document.getElementById("rhythmMatrix").appendChild(matrix)
     }
 
 }

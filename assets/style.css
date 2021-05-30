@@ -41,7 +41,7 @@ h1, h2 {
     overflow: auto;
 }
 
-.input-question, .question {
+.inputQuestion, .question {
     font-family: Courier, monospace;
     font-size: 25px; 
 }
@@ -55,7 +55,7 @@ h1, h2 {
     font-size: 18px; 
 }
 
-.generated-text {
+.generatedText {
     color: black;
     height: 333px;
     align-items: center;

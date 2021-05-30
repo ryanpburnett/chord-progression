@@ -41,7 +41,7 @@ function moreShow() {
 }
 
 function generateProg() {
-    document.querySelector("#chord-prog").innerText = ""
+    document.querySelector("#chordProg").innerText = ""
     chordType = []
 
     for (let i = 0; i < major.value; i++) {
@@ -76,7 +76,7 @@ function generateProg() {
         
         if (i === 4 || i === 8 || i === 12) {
             const lineBreak = document.createElement("br")
-            document.getElementById("chord-prog").appendChild(lineBreak)
+            document.getElementById("chordProg").appendChild(lineBreak)
         }
 
         const prog = document.createElement("p")
@@ -84,7 +84,7 @@ function generateProg() {
         pitchClass[Math.floor(Math.random() * pitchClass.length)] +
         chordType[Math.floor(Math.random() * chordType.length)] 
         
-        document.getElementById("chord-prog").appendChild(prog)
+        document.getElementById("chordProg").appendChild(prog)
     }
 
 }

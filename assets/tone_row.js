@@ -5,7 +5,7 @@ const gen1 = document.getElementById("gen1")
 gen1.addEventListener("click", generateRow)
 
 function generateRow() {
-    document.querySelector("#tone-row").innerText = ""
+    document.querySelector("#toneRow").innerText = ""
 
     // Fisher-Yates array shuffle
     let i = pitchClass.length, j, temp
@@ -16,7 +16,7 @@ function generateRow() {
     pitchClass[i] = temp;
     }
 
-    document.querySelector("#tone-row").innerText = pitchClass
+    document.querySelector("#toneRow").innerText = pitchClass
 
     // // old randomizer
     // for (let i = 0; i < 12; i++) {
