@@ -41,14 +41,18 @@ h1, h2 {
     overflow: auto;
 }
 
-.input-question {
+.input-question, .question {
     font-family: Courier, monospace;
     font-size: 25px; 
 }
 
-.probabilityText {
+.question {
+    font-weight: bold;
+}
+
+.probabilityText, .answer {
     font-family: Courier, monospace;
-    font-size: 12px; 
+    font-size: 18px; 
 }
 
 .generated-text {

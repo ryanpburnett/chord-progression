@@ -11,8 +11,19 @@
 <body>
     <h1>About</h1>
     <div class="boxen">
-        <p class="input-question">How do you generate random elements?</p>
-        <p class="input-question">How to the probabilites work on the Chord Progression Generator page?</p>
+        <p class="question">How do you generate random elements?</p>
+        <br>
+        <p class="answer">I use <code>Math.random()</code> for a lot of the number generation stuff, and then I map in on to the index of a corrosponding array item holding the available pitch classes, chord qualities, etc.</p>
+        <p class="question">How to the probabilites work on the Chord Progression Generator page?</p>
+        <br>
+        <p class="answer">The number you pick for each chord quality determines how many of that chord goes into the array of possible chord qualities.  For instance, if I pick "4" for major, "3" for minor, and "2" for diminished, I will have 9 items, (4+3+2) four of which will be major, three minor, and 2 diminished, that the app will randomly choose from.  </p>
+        <p class="question">Where can I send you an email/smoke signal/AIM/Morse code?</p>
+        <br>
+        <p class="answer">My contact information can be found <a href="https://ryanpburnett.github.io/contact.html">here</a>.</p>
     </div>
+    <div class="back">
+        <a href="./index.html">Back</a>
+    </div>
+    <div id="sig">-RPB</div>
 </body>
 </html>
