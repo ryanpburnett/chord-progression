@@ -1,26 +1,33 @@
 const pitchClass = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
-const chordType = [
-"", "", "", "", "", "", "", "", 
-"m", "m", "m", "m", "m", "m", "m", "m", 
-"dim", "dim", "dim", "dim",
-"aug", "aug", 
-"7", "7", "7", "7", 
-"M7", "M7", 
-"m7", "m7", 
-"mM7", 
-"dim7", "dim7", 
-"1/2dim7", 
-"aug7"
-]
+const chordType = []
 
 const gen2 = document.getElementById("gen2")
-
 const numOfChords = document.getElementById("numOfChords")
+const numMajor = document.getElementById("numMajor")
+const numMinor = document.getElementById("numMinor")
+const numDim = document.getElementById("numDim")
+const numAug = document.getElementById("numAug")
 
 gen2.addEventListener("click", generateProg)
 
 function generateProg() {
     document.querySelector("#chord-prog").innerText = ""
+
+    for (let i = 0; i < numMajor.value; i++) {
+        chordType.push("")
+    }
+
+    for (let i = 0; i < numMinor.value; i++) {
+        chordType.push("m")
+    }
+
+    for (let i = 0; i < numDim.value; i++) {
+        chordType.push("dim")
+    }
+
+    for (let i = 0; i < numAug.value; i++) {
+        chordType.push("aug")
+    }
 
     for (let i = 0; i < numOfChords.value; i++) {
         

@@ -46,6 +46,11 @@ h1, h2 {
     font-size: 25px; 
 }
 
+.probabilityText {
+    font-family: Courier, monospace;
+    font-size: 12px; 
+}
+
 .generated-text {
     color: black;
     height: 333px;
@@ -104,17 +109,29 @@ p {
     p {
         font-size: 15px;
     }
+
+    .probabilityText {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 400px) {
     p {
         font-size: 15px;
     }
+
+    .probabilityText {
+        width: 50%;
+    }
 }
 
 @media screen and (min-width: 600px) {
     p {
         font-size: 25px;
+    }
+
+    .probabilityText {
+        width: 50%;
     }
 }
 
