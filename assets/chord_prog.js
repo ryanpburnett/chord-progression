@@ -12,10 +12,13 @@ const domSeven = document.getElementById("domSeven")
 const majSeven = document.getElementById("majSeven")
 const minSeven = document.getElementById("minSeven")
 
-gen2.addEventListener("click", generateProg)
-
 const sevenths = document.getElementById("sevenths")
 const more = document.getElementById("more")
+
+// array to save progs in localStorage, key for each localStorage item
+
+toBeSaved = []
+key = 0
 
 // hides/displays seventh chords, etc.
 
@@ -44,12 +47,15 @@ function moreShow() {
 
 // generates progression
 
+gen2.addEventListener("click", generateProg)
+
 function generateProg() {
 
     // clears existing data in #chordProg html element
 
     document.querySelector("#chordProg").innerText = ""
     chordType = []
+    toBeSaved = []
 
     // populates chordType array
 
@@ -100,6 +106,15 @@ function generateProg() {
         chordType[Math.floor(Math.random() * chordType.length)] 
         
         document.getElementById("chordProg").appendChild(prog)
+        
+        // populating toBeSaved array
+
+        toBeSaved.push(prog.innerText)
     }
 
+    // localStorage stuff
+
+    JSON.stringify(toBeSaved)
+    localStorage.setItem(key, toBeSaved)
+    key++
 }
