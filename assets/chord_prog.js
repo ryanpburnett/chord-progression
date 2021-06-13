@@ -1,7 +1,9 @@
 const pitchClass = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 
+const chordProg = document.getElementById("chordProg")
 const gen2 = document.getElementById("gen2")
 const numOfChords = document.getElementById("numOfChords")
+const saved = document.getElementById("saved")
 
 const major = document.getElementById("major")
 const minor = document.getElementById("minor")
@@ -53,7 +55,7 @@ function generateProg() {
 
     // clears existing data in #chordProg html element
 
-    document.querySelector("#chordProg").innerText = ""
+    chordProg.innerText = ""
     chordType = []
     toBeSaved = []
 
@@ -95,7 +97,7 @@ function generateProg() {
 
         if (i === 4 || i === 8 || i === 12) {
             const lineBreak = document.createElement("br")
-            document.getElementById("chordProg").appendChild(lineBreak)
+            chordProg.appendChild(lineBreak)
         }
 
         // individual chord elements
@@ -105,7 +107,7 @@ function generateProg() {
         pitchClass[Math.floor(Math.random() * pitchClass.length)] +
         chordType[Math.floor(Math.random() * chordType.length)] 
         
-        document.getElementById("chordProg").appendChild(prog)
+        chordProg.appendChild(prog)
         
         // populating toBeSaved array
 
@@ -116,5 +118,9 @@ function generateProg() {
 
     JSON.stringify(toBeSaved)
     localStorage.setItem(key, toBeSaved)
+    // let newSavedItem = JSON.parse(localStorage.getItem(key, toBeSaved))
+    // let newSavedP = document.createElement("p")
+    // newSavedP.innerText = newSavedItem
     key++
+
 }
