@@ -17,6 +17,8 @@ gen2.addEventListener("click", generateProg)
 const sevenths = document.getElementById("sevenths")
 const more = document.getElementById("more")
 
+// hides/displays seventh chords, etc.
+
 let mode = "hide"
 let mode2 = "hide"
 
@@ -40,9 +42,16 @@ function moreShow() {
     }
 }
 
+// generates progression
+
 function generateProg() {
+
+    // clears existing data in #chordProg html element
+
     document.querySelector("#chordProg").innerText = ""
     chordType = []
+
+    // populates chordType array
 
     for (let i = 0; i < major.value; i++) {
         chordType.push("")
@@ -72,12 +81,18 @@ function generateProg() {
         chordType.push("m7")
     }
 
+    // generates new progression
+
     for (let i = 0; i < numOfChords.value; i++) {
         
+        // line breaks every 4 chords
+
         if (i === 4 || i === 8 || i === 12) {
             const lineBreak = document.createElement("br")
             document.getElementById("chordProg").appendChild(lineBreak)
         }
+
+        // individual chord elements
 
         const prog = document.createElement("p")
         prog.innerText = 
