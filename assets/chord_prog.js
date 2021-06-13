@@ -118,9 +118,10 @@ function generateProg() {
 
     JSON.stringify(toBeSaved)
     localStorage.setItem(key, toBeSaved)
-    // let newSavedItem = JSON.parse(localStorage.getItem(key, toBeSaved))
-    // let newSavedP = document.createElement("p")
-    // newSavedP.innerText = newSavedItem
+    let newSavedItem = localStorage.getItem(key)
+    let newSavedP = document.createElement("p")
+    newSavedP.innerText = newSavedItem
+    saved.appendChild(newSavedP)
     key++
 
 }
