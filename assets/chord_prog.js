@@ -17,9 +17,8 @@ const minSeven = document.getElementById("minSeven")
 const sevenths = document.getElementById("sevenths")
 const more = document.getElementById("more")
 
-// array to save progs in localStorage, key for each localStorage item
+// key for each localStorage item
 
-let toBeSaved = []
 let key = 0
 
 // hides/displays seventh chords, etc.
@@ -56,8 +55,8 @@ function generateProg() {
     // clears existing data in #chordProg html element
 
     chordProg.innerText = ""
-    chordType = []
-    toBeSaved = []
+    let chordType = []
+    let toBeSaved = []
 
     // populates chordType array
 
