@@ -99,6 +99,10 @@ p {
     outline: 0px;
 }
 
+.textWrap {
+    word-wrap: break-word;
+}
+
 .back {
     margin: 5px;
     font-family: Courier, monospace;
