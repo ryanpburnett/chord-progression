@@ -5,9 +5,12 @@ const gen3 = document.getElementById("gen3")
 const notes = document.getElementById("notes")
 const rests = document.getElementById("rests")
 
+let toBeSavedRhythmMatrix
+let rhythmMatrixKey = 200
+
 gen3.addEventListener("click", generateMatrix)
+
 // fix this with CSS grid? clearfix?
-// rearrange array instead of randomizing so as not to repeat pitch classes
 function generateMatrix() {
     document.querySelector("#rhythmMatrix").innerText = ""
     const rhythmMatrix = []
@@ -34,4 +37,6 @@ function generateMatrix() {
         document.getElementById("rhythmMatrix").appendChild(matrix)
     }
 
+    // local storage
+    // Work in progress
 }
