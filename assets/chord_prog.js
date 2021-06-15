@@ -19,8 +19,8 @@ const more = document.getElementById("more")
 
 // array to save progs in localStorage, key for each localStorage item
 
-toBeSaved = []
-key = 0
+let toBeSaved = []
+let key = 0
 
 // hides/displays seventh chords, etc.
 
