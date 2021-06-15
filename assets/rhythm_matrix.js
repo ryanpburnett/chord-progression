@@ -5,7 +5,6 @@ const gen3 = document.getElementById("gen3")
 const notes = document.getElementById("notes")
 const rests = document.getElementById("rests")
 
-let toBeSavedRhythmMatrix
 let rhythmMatrixKey = 200
 
 gen3.addEventListener("click", generateMatrix)
@@ -13,8 +12,9 @@ gen3.addEventListener("click", generateMatrix)
 // fix this with CSS grid? clearfix?
 function generateMatrix() {
     document.querySelector("#rhythmMatrix").innerText = ""
-    const rhythmMatrix = []
-
+    let rhythmMatrix = []
+    let toBeSavedRhythmMatrix = []
+    
     for (let i = 0; i < notes.value; i++) {
         rhythmMatrix.push("X")
     }
@@ -35,8 +35,18 @@ function generateMatrix() {
         matrix.innerText = rhythmMatrix[Math.floor(Math.random() * rhythmMatrix.length)]
         
         document.getElementById("rhythmMatrix").appendChild(matrix)
+
+        toBeSavedRhythmMatrix.push(matrix.innerText)
     }
 
     // local storage
-    // Work in progress
+    
+    JSON.stringify(toBeSavedRhythmMatrix)
+    localStorage.setItem(rhythmMatrixKey, toBeSavedRhythmMatrix)
+    let newSavedItem = localStorage.getItem(rhythmMatrixKey)
+    let newSavedListItem = document.createElement("li")
+    newSavedListItem.innerText = newSavedItem
+    saved.prepend(newSavedListItem)
+    rhythmMatrixKey++
+
 }
