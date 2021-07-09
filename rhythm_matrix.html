@@ -8,45 +8,46 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    
-    <h1 class="headspace">rhythm matrix generator</h1>
-    <div class="boxen generatedText" 
-    <div class="boxen">
-        <p class="inputQuestion">How many beats would you like?&nbsp;&nbsp;       
-            <input id="numOfBeats" type="range" value="8" max="16" min="1" oninput="this.nextElementSibling.value = this.value">
-            <output>8</output>
-        </p>
-        <br>
-        <p class="inputQuestion"><a href="about.html">Density of:</a></p>
-        <br>
-        <p class="probabilityText">Notes
-            <input id="notes" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
-            <output>4</output>
-        </p>
+    <div class="center">
+        <h1 class="headspace">rhythm matrix generator</h1>
+        <div class="boxen generatedText" 
+        <div class="boxen">
+            <p class="inputQuestion">How many beats would you like?&nbsp;&nbsp;       
+                <input id="numOfBeats" type="range" value="8" max="16" min="1" oninput="this.nextElementSibling.value = this.value">
+                <output>8</output>
+            </p>
+            <br>
+            <p class="inputQuestion"><a href="about.html">Density of:</a></p>
+            <br>
+            <p class="probabilityText">Notes
+                <input id="notes" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+            </p>
 
-        <p class="probabilityText">Rests
-            <input id="rests" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
-            <output>4</output>
-        </p>
+            <p class="probabilityText">Rests
+                <input id="rests" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+            </p>
+        </div>
+        <div class="boxen generatedText" id="rhythmMatrix">
+            <!-- ptags generated here -->
+        </div>  
+        <div class="buttonbox">
+            <button class="button" id="gen3">Generate</button>
+        </div>
+        <br>
+        <div class="boxen generatedText">
+            <p class="inputQuestion">Previous Generated Rhythm Matrices</p>
+            <ul id="saved" class="textWrap">
+                <!-- saved items go here -->
+            </ul>
+        </div>
+        <div class="back">
+            <a href="./index.html">Back</a>
+        </div>
+        
+        <div id="sig">-RPB</div>
     </div>
-    <div class="boxen generatedText" id="rhythmMatrix">
-        <!-- ptags generated here -->
-    </div>  
-    <div class="buttonbox">
-        <button class="button" id="gen3">Generate</button>
-    </div>
-    <br>
-    <div class="boxen generatedText">
-        <p class="inputQuestion">Previous Generated Rhythm Matrices</p>
-        <ul id="saved" class="textWrap">
-            <!-- saved items go here -->
-        </ul>
-    </div>
-    <div class="back">
-        <a href="./index.html">Back</a>
-    </div>
-    
-    <div id="sig">-RPB</div>
     <script src="./assets/rhythm_matrix.js"></script>
 </body>
 </html>

@@ -8,28 +8,29 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-
-    <h1 class="headspace">12 tone row generator</h1>
-    <div class="boxen generatedText">
-        <p id="toneRow">
-        <!-- row generated here -->
-        </p>
-    </div>  
-    <div class="buttonbox">
-        <button class="button" id="gen1">Generate</button>
+    <div class="center">
+        <h1 class="headspace">12 tone row generator</h1>
+        <div class="boxen generatedText">
+            <p id="toneRow">
+            <!-- row generated here -->
+            </p>
+        </div>  
+        <div class="buttonbox">
+            <button class="button" id="gen1">Generate</button>
+        </div>
+        <br>
+        <div class="boxen generatedText">
+            <p class="inputQuestion">Previous Generated Tone Rows</p>
+            <ul id="saved" class="textWrap">
+                <!-- saved items go here -->
+            </ul>
+        </div>
+        <div class="back">
+            <a href="./index.html">Back</a>
+        </div>
+        
+        <div id="sig">-RPB</div>
     </div>
-    <br>
-    <div class="boxen generatedText">
-        <p class="inputQuestion">Previous Generated Tone Rows</p>
-        <ul id="saved" class="textWrap">
-            <!-- saved items go here -->
-        </ul>
-    </div>
-    <div class="back">
-        <a href="./index.html">Back</a>
-    </div>
-    
-    <div id="sig">-RPB</div>
     <script src="./assets/tone_row.js"></script>
 </body>
 </html>
