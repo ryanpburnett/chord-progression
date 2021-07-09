@@ -95,11 +95,15 @@ p {
 }
 
 .button:hover {
+    transition: all 0.2s;
     background-color: rgb(150, 200, 235);
+    transform: scale(1.05);
 }
 
 .button:active {
-    background-color: rgb(150, 200, 255);
+    transition: all 0.2s;
+    background-color: rgb(150, 200, 235);
+    transform: scale(1.1);
 }
 
 .button:focus {
