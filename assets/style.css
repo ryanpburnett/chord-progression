@@ -5,13 +5,13 @@ body {
 }
 
 @keyframes bgAnimate {
-    0% {background-color: rgb(130, 200, 130);}
-    17% {background-color: rgb(100, 90, 200);}
-    33% {background-color: rgb(200, 10, 200);}
-    50% {background-color: rgb(200, 10, 10);}
-    67% {background-color: rgb(200, 10, 200);}
-    84% {background-color: rgb(100, 90, 200);}
-    100% {background-color: rgb(130, 200, 130);}
+    0% {background-color: rgb(100, 90, 200);}
+    17% {background-color: rgb(200, 10, 200);}
+    33% {background-color: rgb(200, 10, 10);}
+    50% {background-color: rgb(200, 10, 200);}
+    67% {background-color: rgb(100, 90, 200);}
+    84% {background-color: rgb(130, 200, 130);}
+    100% {background-color: rgb(100, 90, 200);}
 }
 
 h1, h2 {
@@ -24,13 +24,20 @@ h1, h2 {
     margin-top: 100px;
 }
 
+.center {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .index {
     font-family: Courier, monospace;
     font-size: 50px;
 }
 
 .boxen {
+    margin: auto;
     border: 5px solid navy;
+    border-radius: 20px;
 }
 
 .boxen, .buttonbox {
@@ -119,6 +126,7 @@ p {
     font-weight: bold;
     color: navy;
     text-align: right;
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 400px) {
@@ -160,6 +168,9 @@ p {
 @media screen and (min-width: 992px) {
     p {
         font-size: 35px;
+    }
+    .center {
+        width: 70%;
     }
 }
 

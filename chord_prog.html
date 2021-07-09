@@ -8,74 +8,75 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    
-    <h1 class="headspace">chord progresssion generator</h1>
-    <div class="boxen">
-        <p class="inputQuestion">How many chords do you want?&nbsp;&nbsp;<input id="numOfChords" type="range" value="4" max="16" min="1" oninput="this.nextElementSibling.value = this.value">
-            <output>4</output>
-        </p>
-        <br>
-        <p class="inputQuestion"><a href="about.html">Probability of:</a></p>
-        <br>
-        <p class="probabilityText">Major
-            <input id="major" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
-            <output>4</output>
-        </p>
-
-        <p class="probabilityText">Minor
-            <input id="minor" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
-            <output>4</output>
-        </p>
-
-        <p class="probabilityText">Diminished
-            <input id="dim" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
-            <output>4</output>
-        </p>
-
-        <p class="probabilityText">Augmented
-            <input id="aug" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
-            <output>4</output>
-        </p>
-        <br>
-        <button class="button" onclick="seventhsShow()">Ya like 7ths?</button>
-        <div id="sevenths" class="hide">
-            <p class="probabilityText">7th
-                <input id="domSeven" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
-                <output>0</output>
-            </p>
-            <p class="probabilityText">Maj7
-                <input id="majSeven" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
-                <output>0</output>
-            </p>
-            <p class="probabilityText">Min7
-                <input id="minSeven" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
-                <output>0</output>
+    <div class="center">
+        <h1 class="headspace">chord progression generator</h1>
+        <div class="boxen">
+            <p class="inputQuestion">How many chords do you want?&nbsp;&nbsp;<input id="numOfChords" type="range" value="4" max="16" min="1" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
             </p>
             <br>
-            <button class="button" onclick="moreShow()">Even more?</button>
-            <div id="more" class="hide">
-                <p>Coming soon...</p>
+            <p class="inputQuestion"><a href="about.html">Probability of:</a></p>
+            <br>
+            <p class="probabilityText">Major
+                <input id="major" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+            </p>
+
+            <p class="probabilityText">Minor
+                <input id="minor" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+            </p>
+
+            <p class="probabilityText">Diminished
+                <input id="dim" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+            </p>
+
+            <p class="probabilityText">Augmented
+                <input id="aug" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                <output>4</output>
+            </p>
+            <br>
+            <button class="button" onclick="seventhsShow()">Ya like 7ths?</button>
+            <div id="sevenths" class="hide">
+                <p class="probabilityText">7th
+                    <input id="domSeven" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                    <output>0</output>
+                </p>
+                <p class="probabilityText">Maj7
+                    <input id="majSeven" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                    <output>0</output>
+                </p>
+                <p class="probabilityText">Min7
+                    <input id="minSeven" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                    <output>0</output>
+                </p>
+                <br>
+                <button class="button" onclick="moreShow()">Even more?</button>
+                <div id="more" class="hide">
+                    <p>Coming soon...</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="boxen generatedText" id="chordProg">
-        <!-- ptags generated here -->
-    </div>  
-    <div class="buttonbox">
-        <button class="button" id="gen2">Generate</button>
-    </div>
-    <br>
-    <div class="boxen generatedText">
-        <p class="inputQuestion">Previous Generated Chords</p>
-        <ul id="saved" class="textWrap">
-            <!-- saved items go here -->
-        </ul>
-    </div>
-    <div class="back">
-        <a href="./index.html">Back</a>
+        <div class="boxen generatedText" id="chordProg">
+            <!-- ptags generated here -->
+        </div>  
+        <div class="buttonbox">
+            <button class="button" id="gen2">Generate</button>
+        </div>
+        <br>
+        <div class="boxen generatedText">
+            <p class="inputQuestion">Previous Generated Chords</p>
+            <ul id="saved" class="textWrap">
+                <!-- saved items go here -->
+            </ul>
+        </div>
+        <div class="back">
+            <a href="./index.html">Back</a>
+        </div>
+        <div id="sig">-RPB</div>
     </div>
     
-    <div id="sig">-RPB</div>
     <script src="./assets/chord_prog.js"></script>
 </body>
 </html>
