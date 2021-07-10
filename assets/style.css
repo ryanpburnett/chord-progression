@@ -61,6 +61,8 @@ h1, h2 {
     -webkit-appearance: none;
     width: auto;
     height: 0px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     background: black;
     outline: none;
     border: 3px solid black;
