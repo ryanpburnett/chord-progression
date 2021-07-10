@@ -57,6 +57,39 @@ h1, h2 {
     font-weight: bold;
 }
 
+.slider {
+    -webkit-appearance: none;
+    width: auto;
+    height: 0px;
+    background: black;
+    outline: none;
+    border: 3px solid black;
+    border-radius: 8px;
+    }
+    
+    
+    /* for chrome/safari */
+    .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 30px;
+    background: navy;
+    cursor: pointer;
+    border: 5px solid navy;
+    border-radius: 5px;
+    }
+    
+    /* for firefox */
+    .slider::-moz-range-thumb {
+    width: 10px;
+    height: 30px;
+    background: navy;
+    cursor: pointer;
+    border: 5px solid navy;
+    border-radius: 5px;
+}
+
 .probabilityText, .answer {
     font-family: Courier, monospace;
     font-size: 18px; 

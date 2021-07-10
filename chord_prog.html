@@ -11,44 +11,44 @@
     <div class="center">
         <h1 class="headspace">chord progression generator</h1>
         <div class="boxen">
-            <p class="inputQuestion">How many chords do you want?&nbsp;&nbsp;<input id="numOfChords" type="range" value="4" max="16" min="1" oninput="this.nextElementSibling.value = this.value">
+            <p class="inputQuestion">How many chords do you want?&nbsp;&nbsp;<input id="numOfChords" class="slider" type="range" value="4" max="16" min="1" oninput="this.nextElementSibling.value = this.value">
                 <output>4</output>
             </p>
             <br>
             <p class="inputQuestion"><a href="about.html">Probability of:</a></p>
             <br>
             <p class="probabilityText">Major
-                <input id="major" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                <input id="major" class="slider" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
                 <output>4</output>
             </p>
 
             <p class="probabilityText">Minor
-                <input id="minor" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                <input id="minor" class="slider" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
                 <output>4</output>
             </p>
 
             <p class="probabilityText">Diminished
-                <input id="dim" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                <input id="dim" class="slider" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
                 <output>4</output>
             </p>
 
             <p class="probabilityText">Augmented
-                <input id="aug" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                <input id="aug" class="slider" type="range" value="4" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
                 <output>4</output>
             </p>
             <br>
             <button class="button" onclick="seventhsShow()">Ya like 7ths?</button>
             <div id="sevenths" class="hide">
                 <p class="probabilityText">7th
-                    <input id="domSeven" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                    <input id="domSeven" class="slider" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
                     <output>0</output>
                 </p>
                 <p class="probabilityText">Maj7
-                    <input id="majSeven" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                    <input id="majSeven" class="slider" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
                     <output>0</output>
                 </p>
                 <p class="probabilityText">Min7
-                    <input id="minSeven" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                    <input id="minSeven" class="slider" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
                     <output>0</output>
                 </p>
                 <br>
