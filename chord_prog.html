@@ -54,7 +54,22 @@
                 <br>
                 <button class="button" onclick="moreShow()">Even more?</button>
                 <div id="more" class="hide">
-                    <p>Coming soon...</p>
+                    <p class="probabilityText">9th
+                        <input id="ninth" class="slider" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                        <output>0</output>
+                    </p>
+                    <p class="probabilityText">11th
+                        <input id="eleventh" class="slider" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                        <output>0</output>
+                    </p>
+                    <p class="probabilityText">13th
+                        <input id="thirteenth" class="slider" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                        <output>0</output>
+                    </p>
+                    <p class="probabilityText">Quartal
+                        <input id="quartal" class="slider" type="range" value="0" max="8" min="0" oninput="this.nextElementSibling.value = this.value">
+                        <output>0</output>
+                    </p>
                 </div>
             </div>
         </div>

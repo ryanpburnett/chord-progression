@@ -14,6 +14,11 @@ const domSeven = document.getElementById("domSeven")
 const majSeven = document.getElementById("majSeven")
 const minSeven = document.getElementById("minSeven")
 
+const ninth = document.getElementById("ninth")
+const eleventh = document.getElementById("eleventh")
+const thirteenth = document.getElementById("thirteenth")
+const quartal = document.getElementById("quartal")
+
 const sevenths = document.getElementById("sevenths")
 const more = document.getElementById("more")
 
@@ -59,6 +64,7 @@ function generateProg() {
     let toBeSaved = []
 
     // populates chordType array
+    // refactor to be less WET
 
     for (let i = 0; i < major.value; i++) {
         chordType.push("")
@@ -87,6 +93,23 @@ function generateProg() {
     for (let i = 0; i < minSeven.value; i++) {
         chordType.push("m7")
     }
+
+    for (let i = 0; i < ninth.value; i++) {
+        chordType.push("9")
+    }
+
+    for (let i = 0; i < eleventh.value; i++) {
+        chordType.push("11")
+    }
+
+    for (let i = 0; i < thirteenth.value; i++) {
+        chordType.push("13")
+    }
+
+    for (let i = 0; i < quartal.value; i++) {
+        chordType.push("Q4")
+    }
+
 
     // generates new progression
 
