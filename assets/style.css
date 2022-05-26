@@ -120,6 +120,10 @@ p {
     margin-bottom: 15px;
 }
 
+li {
+    list-style-type: none;
+}
+
 .button {
     margin: 20px;
     border-radius: 10px;
