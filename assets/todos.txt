@@ -1,0 +1,14 @@
+TODOS
+
+-scale generator page, button to nav to it
+-weighted 1/2 steps, whole steps, aug 2nds
+-maybe this is the structure?
+    let index = 0;
+    let scaleNumbers = [0]
+    while(semitiones < 11) {
+        let step = <some Math.random logic>;
+        index += step
+        scaleNumbers.push(index);
+    }
+
+    <map pitch names to numbers>
