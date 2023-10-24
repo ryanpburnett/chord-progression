@@ -19,7 +19,7 @@
 https://ryanpburnett.github.io/chord-progression/
 
 ## Description
-This project generates random chord progressions, tone rows, and rhythm matrices
+This project generates random chord progressions, tone rows, and rhythm matrices.
 
 ### License
 GNU General Public Licence
