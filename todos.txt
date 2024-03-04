@@ -12,3 +12,6 @@ TODOS
     }
 
     <map pitch names to numbers>
+-------------------------------------------------
+-build backend
+-MIDI playback
